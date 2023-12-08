@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+<main class="container d-flex justify-content-center align-items-center" id="form">
+        <form action="/submit" method="POST" class="form-control">
+            <div class="form-group py-2">
+                <label for="title">Title</label>
+                <input type="text" name="title" class="form-control my-2" required placeholder="Post title">
+            </div>
+            <div class="form-group py-2">
+                <label for="author">Name</label>
+                <input type="text" name="name"  class="form-control my-2" required placeholder="Your name here">
+            </div>
+            <div class="form-group py-2">
+                <label for="content">Content</label>
+                <textarea  name="content" rows="5" class="form-control my-2" required placeholder="Your content here..."></textarea>
+            </div>
+            <input type="submit" class="btn btn-success" value="Post">
+        </form>
+</main>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+<main class="container d-flex justify-content-center align-items-center" id="form">
+    <% for(let i=0;i<postToUpdate.length;i++) { %>
+        <form method="POST" action="/editPost"  class="form-control">
+            <div class="form-group py-2">
+                <label for="title">Title</label>
+                <input type="text" name="title" class="form-control my-2" required  value="<%= postToUpdate[i].Title %>">
+            </div>
+            <div class="form-group py-2">
+                <label for="author">Name</label>
+                <input type="text" name="name"  class="form-control my-2" required  value="<%= postToUpdate[i].Name %>">
+            </div>
+            <div class="form-group py-2">
+                <label for="content">Content</label>
+                <textarea  name="content" rows="5" class="form-control my-2" required><%= postToUpdate[i].Content %></textarea>
+            </div>
+            <input type="hidden" name="postId" value="<%= postToUpdate[i].Id %>">
+            <input type="submit" class="btn btn-success" value="Save Changes">
+        </form>
+        <% } %>
+</main>
+<%- include("partials/footer.ejs") %>

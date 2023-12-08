@@ -1,0 +1,23 @@
+{
+  "name": "capstone-project-3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "get-short-id": "^3.0.10",
+    "nodemon": "^3.0.2",
+    "short-uuid": "^4.2.2",
+    "shortid": "^2.2.16"
+  },
+  "description": ""
+}
